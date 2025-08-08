@@ -27,7 +27,6 @@ It demonstrates the use of popular libraries such as **Pandas, NumPy, Matplotlib
 
 ## Installation  
 1. Clone the repository
-```bash
-git clone https://github.com/your-username/python-data-analysis.git
+
 ```bash
 git clone https://github.com/your-username/python-data-analysis.git

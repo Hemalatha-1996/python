@@ -26,5 +26,4 @@ It is written with **clean, modular, and reusable code**, making it suitable for
 
 ---
 
-## 📂 Project Structure  
 

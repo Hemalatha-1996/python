@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import kagglehub
-from kagglehub import KaggleDatasetAdapter
+ 
 
 st.set_page_config(page_title="Retail Order Analysis", layout='wide')
 st.title("🛒 Retail Order Data Analysis")

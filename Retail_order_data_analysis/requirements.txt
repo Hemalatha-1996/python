@@ -1,5 +1,8 @@
 streamlit
 pandas
-pyodbc
-plotly
+numpy
 matplotlib
+seaborn
+pyodbc
+sqlalchemy
+kagglehub

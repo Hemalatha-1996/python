@@ -8,7 +8,7 @@ st.title("🛒 Retail Order Data Analysis")
 # ── Load & Prepare Data ────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\ARUN\Downloads\orders.csv\orders.csv", na_values=['Not Available', 'unknown'])
+    df = pd.read_csv("orders.csv", na_values=['Not Available', 'unknown'])
     df.columns = df.columns.str.lower().str.replace(' ', '_')
     df['discount_amount'] = df['list_price'] * df['discount_percent'] * 0.01
     df['sale_price']      = df['list_price'] - df['discount_amount']

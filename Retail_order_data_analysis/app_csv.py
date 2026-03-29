@@ -10,7 +10,7 @@ st.title("🛒 Retail Order Data Analysis")
 @st.cache_data
 def load_data():
  
-    df = pd.read_csv("orders.csv")
+   df = pd.read_csv("Retail_order_data_analysis/orders.csv")
    
 
     

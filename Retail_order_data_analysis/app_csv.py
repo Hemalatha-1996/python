@@ -10,8 +10,11 @@ st.title("🛒 Retail Order Data Analysis")
 # ── Load & Prepare Data ────────────────────────────────
 @st.cache_data
 def load_data():
-    file_path = ""
-    df = kagglehub.load_dataset(  KaggleDatasetAdapter.PANDAS,  "ankitbansal06/retail-orders",  file_path)
+ 
+    df = pd.read_csv("orders.csv")
+   
+
+    
 
     df.columns = df.columns.str.lower().str.replace(' ', '_')
     df['discount_amount'] = df['list_price'] * df['discount_percent'] * 0.01

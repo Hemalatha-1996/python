@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import kagglehub
+from kagglehub import KaggleDatasetAdapter
 
 st.set_page_config(page_title="Retail Order Analysis", layout='wide')
 st.title("🛒 Retail Order Data Analysis")
@@ -8,7 +10,9 @@ st.title("🛒 Retail Order Data Analysis")
 # ── Load & Prepare Data ────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("orders.csv", na_values=['Not Available', 'unknown'])
+    file_path = ""
+    df = kagglehub.load_dataset(  KaggleDatasetAdapter.PANDAS,  "ankitbansal06/retail-orders",  file_path)
+
     df.columns = df.columns.str.lower().str.replace(' ', '_')
     df['discount_amount'] = df['list_price'] * df['discount_percent'] * 0.01
     df['sale_price']      = df['list_price'] - df['discount_amount']

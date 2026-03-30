@@ -57,6 +57,29 @@ option = st.sidebar.selectbox("Choose a Query", [
 if option=="data":
     st.subheader("Retail order dataset")
     st.dataframe(df)
+    st.subheader("Queries")
+    st.info("""
+📊 Q1  - Top 10 Revenue Products\n
+📊 Q2  - Top 5 Cities by Profit Margin\n
+📊 Q3  - Total Discount per Category\n
+📊 Q4  - Avg Sale Price per Product Category\n
+📊 Q5  - Region with Highest Avg Sale Price\n
+📊 Q6  - Total Profit per Category\n
+📊 Q7  - Top 3 Segments by Orders\n
+📊 Q8  - Avg Discount % per Region\n
+📊 Q9  - Category with Highest Total Profit\n
+📊 Q10 - Total Revenue per Year\n
+📊 Q11 - YoY Sales Growth per Category\n
+📊 Q12 - Month with Highest Sales\n
+📊 Q13 - Top 5 Sub-Categories by Profit Margin\n
+📊 Q14 - Products with Discount > 20%\n
+📊 Q15 - Rank Products by Revenue in Category\n
+📊 Q16 - Segment-wise Profit Contribution %\n
+📊 Q17 - Monthly MoM Revenue Change\n
+📊 Q18 - Region with Most Orders per Category\n
+📊 Q19 - Categories where Avg Profit > 100\n
+📊 Q20 - Bottom 5 Loss-Making Products
+""")
 # Q1
 if option == "Q1  - Top 10 Revenue Products":
     st.subheader("🏆 Q1: Top 10 Highest Revenue Generating Products")

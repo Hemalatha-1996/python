@@ -1,8 +1,4 @@
-streamlit
+plotly
 pandas
+streamlit
 numpy
-matplotlib
-seaborn
-pyodbc
-sqlalchemy
-kagglehub

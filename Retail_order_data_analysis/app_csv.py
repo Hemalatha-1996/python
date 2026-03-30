@@ -31,6 +31,7 @@ df = load_data()
 # ── Sidebar ────────────────────────────────────────────
 st.sidebar.title("📊 Select Report")
 option = st.sidebar.selectbox("Choose a Query", [
+    "data",
     "Q1  - Top 10 Revenue Products",
     "Q2  - Top 5 Cities by Profit Margin",
     "Q3  - Total Discount per Category",
@@ -52,7 +53,10 @@ option = st.sidebar.selectbox("Choose a Query", [
     "Q19 - Categories where Avg Profit > 100",
     "Q20 - Bottom 5 Loss-Making Products",
 ])
-
+#data
+if option=="data":
+    st.subheader("Retail order dataset")
+    st.dataframe(df)
 # Q1
 if option == "Q1  - Top 10 Revenue Products":
     st.subheader("🏆 Q1: Top 10 Highest Revenue Generating Products")

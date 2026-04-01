@@ -14,7 +14,7 @@ st.set_page_config(
 # ============================================================
 @st.cache_data
 def load_data():
-    df = pd.read_csv("python\project2\cleaned_dataset.csv")
+    df = pd.read_csv("cleaned_dataset.csv")
     df.columns = df.columns.str.strip()
     return df
 

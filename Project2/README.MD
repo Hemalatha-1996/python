@@ -50,42 +50,6 @@ agriculture-dashboard/
 
 ---
 
-## ▶️ How to Run Locally
-
-### Step 1: Clone Repository
-
-```
-git clone https://github.com/your-username/agriculture-dashboard.git
-```
-
-### Step 2: Go to Project Folder
-
-```
-cd agriculture-dashboard
-```
-
-### Step 3: Install Requirements
-
-```
-pip install -r requirements.txt
-```
-
-### Step 4: Run Streamlit App
-
-```
-streamlit run agriculture_dashboard.py
-```
-
----
-
-## 🌐 Deployment
-
-This project is deployed using **Streamlit Community Cloud**.
-
-Live App:
-https://python-tek9qo7gym8dqh2k24vzxf.streamlit.app/
-
----
 
 ## 📊 Dataset
 
